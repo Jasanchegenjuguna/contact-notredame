@@ -1,0 +1,289 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header Section */
+header{
+ position: relative;
+    background: url('images/contact\ image.jpg') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: sans-serif;
+    }
+    
+    .header-image {
+    text-align: center;
+    background:rgb(37, 119, 146, 0.5) ; /* Dark overlay to improve text visibility */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header-image h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+.header-image p {
+    font-size: 1rem;
+    color: #CCC;
+}
+
+/* Office Section */
+.offices {
+    text-align: center;
+    padding: 40px;
+    background-color: white; /* Light background for contrast */
+}
+
+.offices h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.office-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap; /* Ensures the items wrap on smaller screens */
+}
+
+/* Office box styling */
+.office {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Transition effect for smooth hover */
+}
+
+.office h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.office p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #555;
+}
+
+/* Hover Effect */
+.office:hover {
+    background-color: #3ba7ff; /* Background changes to a light blue */
+    border-color: #358cfdec; /* Border changes to a deeper blue */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow becomes more pronounced */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.office:hover h3 {
+    color: #333; /* Ensures heading stays visible */
+}
+
+.office:hover p {
+    color: #444; /* Text becomes slightly darker on hover */
+}
+
+/* Info Section */
+.info-section {
+    text-align: center;
+    padding: 40px;
+    background-color: #f9f9f9; /* White background for the info section */
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures boxes wrap on smaller screens */
+}
+
+/* Info box styling */
+.info-box {
+    background-color: white; /* Light background */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Transition effect */
+    position: relative; /* To position the button correctly */
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3ba7ff;  /* Button background color */
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #159dec; /* Darker yellow on hover */
+}
+
+/* Hover Effect */
+.info-box:hover {
+    background-color: #3ba7ff; /* Background changes to a light blue */
+    border-color: #358cfdec; /* Border changes to a deeper blue */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow becomes more pronounced */
+    transform: scale(1.05); /* Slight scaling on hover */
+}
+
+.info-box:hover h3 {
+    color: #333; /* Ensure heading stays visible */
+}
+
+.info-box:hover p {
+    color: #444; /* Text becomes slightly darker on hover */
+}
+
+
+
+/* Main Contact Section Styling */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px; /* Adjust space between the form and the call us section */
+    padding: 50px;
+    background-color: white;
+}
+
+/* Contact Form Styling */
+.contact-form-wrapper {
+    flex: 1;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 20px;
+    border: radius 10px; 
+    
+    
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 0.5px solid #474646;
+    
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.contact-form button {
+    padding: 12px 20px;
+    background-color: #3ba7ff;
+    border: none;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 35px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.contact-form button:hover {
+   /* Background changes to a light blue */
+    border-color: #358cfdec;
+}
+
+/* Call Us Section Styling */
+.call-us {
+    flex: 1;
+    background-color:#f9f9f9;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.call-us h3 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.call-details p,
+.location-details p,
+.social-details p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.call-details i,
+.social-details i {
+    color: #ffeb3b;
+    margin-right: 10px;
+}
+
+.location-details h4,
+.social-details h4 {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.social-details a {
+    color: #ffeb3b;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.social-details a:hover {
+    color: #fdd835;
+}
+
+/* Flex adjustments for responsiveness */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .call-us,
+    .contact-form-wrapper {
+        margin-bottom: 20px;
+    }
+}
+
